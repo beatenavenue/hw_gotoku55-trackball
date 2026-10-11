@@ -9,6 +9,13 @@ The goal is to order the board with assembly (PCBA) from JLCPCB, so that no hand
 
 This board is not built and not tested yet.
 
+## This board alone is not a complete trackball
+
+JLCPCB assembles only the surface mount parts. You need to get these parts yourself. The sensor and the switches must be soldered by hand.
+
+- The optical sensor PMW3360DM-T2QU and the lens LM19-LSI
+- Six D2LS-21 switches
+
 ## Variants
 
 There are two variants. They differ only in the USB-C connector.
@@ -32,7 +39,7 @@ Each folder has these files:
 - Upload the BOM and the CPL file of the same variant.
 
 Parts without an LCSC number in the BOM are not assembled by JLCPCB.
-These are the switches (D2LS-21) and the optical sensor (PMW3360DM-T2QU). Solder them by hand.
+See "This board alone is not a complete trackball" above.
 
 ## Changes from the original
 
@@ -55,10 +62,16 @@ These parts are marked as "DNP" (do not populate). They are removed from the BOM
 
 | Designator | Part | Reason |
 |---|---|---|
-| LED.D.1, LED.D.3 | Addressable RGB LED | The Ploopy firmware does not use them. In most cases the LEDs cannot be seen from outside. |
+| LED.D.1, LED.D.3 | Addressable RGB LED | See "Why the LEDs were removed" below. |
 | LED.C.20, LED.C.23, LED.R.9, LED.R.16 | Capacitors and resistors for the LEDs | Not needed without the LEDs. |
 | USB.R.12, USB.R.14 | 10k resistor on CC1 and CC2 | The original uses two 10k resistors in parallel on each CC line. This board uses one 5.1k resistor instead. |
 | MCU.J.1 | 2-pin header | No header is mounted, same as the original product. The two holes are used to start the bootloader. See below. |
+
+### Why the LEDs were removed
+
+- The official firmware does not enable the LED feature (rgblight). The configuration file still has settings for 3 LEDs and for animations, so an illumination feature may have been planned. The board has only 2 LEDs.
+- The LEDs run on 5 V (V_USB), but the data signal comes from the RP2040 at 3.3 V. This leaves only a small margin to the voltage that this type of LED needs to read a high level, so the LEDs may not work as expected.
+- The removed parts are all cheap, so removing them does not reduce the cost much.
 
 ### Changed values and substitute parts
 
