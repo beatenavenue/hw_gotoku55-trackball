@@ -34,14 +34,36 @@ So, to keep things compact, I made an arm part (the "trackball support" in small
 
 ![handling](docs/handling.jpg)
 
-In most cases the arm part is all you need. The small-btu v4 case is polished and beautiful, so you can use it as is.  
-However, with a grip like mine, the stock v4 gets in the way: when I lay my thumb flat to press the front buttons, the corner of the case hits my finger.
+In most cases the arm part is all you need. The small-btu v4 case is polished and beautiful, so you can use it as is.
 
-So, for people who hold it this way, I also made a modified version that extends the front buttons all the way to the edge.  
-The screw holes and so on are unchanged from v4, so printing only the top is enough, but the front wall disappears and it looks a little bare, so I made a bottom as well.
+### The arm
+There are two versions of the arm.
+
+- **One-piece version.** For printing in PLA.
+- **Split version.** For metal printing. The arm is metal, and the center floor (the cover over the sensor lens) is a separate PLA part.
+
+A 55 mm ball is heavy, and you roll it with your palm. A PLA arm bends outward under this load. So I recommend printing the arm in metal with SLM (metal 3D printing, for example in stainless steel 316L). With a metal arm, the arm does not bend at all. A metal arm alone is enough to fix this problem.
+
+Use the split version for metal printing. The PLA floor goes in from below. It is held between the metal arm and the sensor lens, so the heavy metal arm does not press on the lens.
+
+### The case
+However, with a grip like mine, the stock v4 gets in the way. When I lay my thumb flat to press the front buttons, the corner of the case hits my finger.
+
+So, for people who hold it this way, I also made a modified case that extends the front buttons all the way to the edge. There are two versions of it.
+
+- **Side screw version.** The screws go in from the sides, the same as v4. You can mix its top and bottom with the original small-btu v4 parts.
+- **Vertical screw version.** The screws go in from the bottom. The screw positions and the rubber foot positions follow small-btu v5 (the rounded version). The sides have no screw holes.
+
+If you want a metal bottom case, choose the vertical screw version. The screw threads are cut in the PLA top, so the metal bottom needs only plain drilled holes and no tapping. With the side screw version, you would have to tap threads in the metal.
+
+If you use pan head screws, choose the side screw version. With the vertical screw version, the screw heads stick out from the bottom.
+
+The two versions use different screw lengths. See the build guide.
 
 ## Compatibility
 small-btu v4 only.
+
+The arm fits the original small-btu v4 case and both GOTOKU cases.
 
 v5 has a similar shape, so it might work, but by my estimate the ball would probably interfere slightly.
 
@@ -50,5 +72,5 @@ See the [build guide](docs/BUILD.md).
 
 ## License
 Copyright (C) 2026 Kotaro WAJIKI  
-Based on ploopy-adept-small-btu v4, Copyright (C) Fabricio Bastian  
+Based on ploopy-adept-small-btu v4 and v5, Copyright (C) Fabricio Bastian  
 Licensed under the GNU General Public License v3.0
