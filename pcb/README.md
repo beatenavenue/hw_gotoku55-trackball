@@ -11,10 +11,9 @@ This board is not built and not tested yet.
 
 ## This board alone is not a complete trackball
 
-JLCPCB assembles only the surface mount parts. You need to get these parts yourself. The sensor and the switches must be soldered by hand.
+JLCPCB assembles all parts in the BOM except the optical sensor. You need to get these parts yourself and solder the sensor by hand.
 
 - The optical sensor PMW3360DM-T2QU and the lens LM19-LSI
-- Six D2LS-21 switches
 
 ## Variants
 
@@ -38,8 +37,9 @@ Each folder has these files:
 - Assemble top side
 - Upload the BOM and the CPL file of the same variant.
 
-Parts without an LCSC number in the BOM are not assembled by JLCPCB.
-See "This board alone is not a complete trackball" above.
+The optical sensor (PMW3360DM-T2QU) has no LCSC number in the BOM, so JLCPCB does not assemble it.
+
+The package of the switch D2LS-21 (LCSC C3823622) is not listed on the JLCPCB part page. Check the position and the direction of the switches in the placement preview before you order.
 
 ## Changes from the original
 
