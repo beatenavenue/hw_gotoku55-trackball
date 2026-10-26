@@ -23,6 +23,7 @@ Buying the Adept kit gets you all of the electronics.
   - Vertical screw case: M2x7mm
 - SMR63ZZ ball bearings x3
 - (Optional) Self-adhesive rubber feet, 8 mm diameter, 1.6 mm high, x4
+- (Vertical screw case) A sticker or a large rubber foot to cover the opening in the bottom (about 15 x 20 mm)
 
 The two case versions use different screw lengths. A screw a little shorter than the listed length also works.
 
@@ -77,6 +78,8 @@ If the ball does not track or the buttons do not press properly, the case may ne
 3D printed parts are not strong enough to be screwed together many times, so test that everything works before you drive the screws in.
 
 With the vertical screw version, the screws go in from the bottom and cut their threads in the PLA top. Do not overtighten them.
+
+The vertical screw bottom has an opening under the sensor. Dust can get in through it, so cover it with a sticker or a large rubber foot.
 
 ### Sharing your build
 An expensive trackball ball may reflect your room, or your face.

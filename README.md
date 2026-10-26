@@ -52,9 +52,11 @@ However, with a grip like mine, the stock v4 gets in the way. When I lay my thum
 So, for people who hold it this way, I also made a modified case that extends the front buttons all the way to the edge. There are two versions of it.
 
 - **Side screw version.** The screws go in from the sides, the same as v4. You can mix its top and bottom with the original small-btu v4 parts.
-- **Vertical screw version.** The screws go in from the bottom. The screw positions and the rubber foot positions follow small-btu v5 (the rounded version). The sides have no screw holes.
+- **Vertical screw version.** The screws go in from the bottom. The screw positions and the rubber foot positions follow small-btu v5 (the rounded version). The sides have no screw holes. The bottom has an opening under the sensor.
 
 If you want a metal bottom case, choose the vertical screw version. The screw threads are cut in the PLA top, so the metal bottom needs only plain drilled holes and no tapping. With the side screw version, you would have to tap threads in the metal.
+
+The vertical screw bottom is shaped for metal printing. Metal printing cannot make very thin walls. The back of the sensor sticks out from the bottom of the PCB, and the case floor under it was too thin. So this part of the floor is open.
 
 If you use pan head screws, choose the side screw version. With the vertical screw version, the screw heads stick out from the bottom.
 
