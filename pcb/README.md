@@ -93,6 +93,19 @@ Other passive parts were replaced with common LCSC parts of the same value and s
 - The label "MCH.FID.1" was hidden.
 - A logo and a notice of the modification were added on the top side.
 
+### Holes for an extra button (GP12)
+
+Two plated holes were added above LED.D.1, the LED on the upper right of the optical sensor.
+They are marked "GP12" and "GND" on the silkscreen. The pitch is 2.54 mm.
+
+- GP12 (square pad) is connected to GPIO12 of the RP2040. This was the data line for the LEDs (LEDData). It is free because the LEDs are not mounted.
+- GND (round pad) is connected to the ground planes.
+
+Connect a switch between the two holes.
+The official firmware does not read GP12. To use the button, add GP12 to the direct pins of the matrix in the firmware, and add a key for it to the layout and the keymap.
+
+Do not use this button if you mount the LEDs. They use the same pin.
+
 ### HRO variant only
 
 The HRO connector has a different pad layout. These changes were made only in the `hro` variant.
