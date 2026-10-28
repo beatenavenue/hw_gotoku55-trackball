@@ -102,7 +102,10 @@ They are marked "GP12" and "GND" on the silkscreen. The pitch is 2.54 mm.
 - GND (round pad) is connected to the ground planes.
 
 Connect a switch between the two holes.
-The official firmware does not read GP12. To use the button, add GP12 to the direct pins of the matrix in the firmware, and add a key for it to the layout and the keymap.
+
+**This button does not work with the official Ploopy QMK firmware, even without the LEDs.**
+The official firmware does not read GP12.
+To use the button, build your own firmware. Add GP12 to the direct pins of the matrix, and add a key for it to the layout and the keymap.
 
 Do not use this button if you mount the LEDs. They use the same pin.
 
