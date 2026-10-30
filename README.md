@@ -8,7 +8,7 @@ English | [日本語](README_ja.md)
 # GOTOKU-55 Trackball
 
 ## What is this?
-This is a **part** for a 55 mm trackball. To see where it fits, you need some background, in order.
+This is a **"part"** for a 55 mm trackball. To see where it fits, you need some background, in order.
 
 ### Ploopy Adept
 The Adept is a trackball with a 44 mm ball (1.75 in ≈ 44.5 mm), developed by Ploopy, a small Canadian company. The design files and firmware are open source, but parts you source yourself may not fit dimensionally, so buying a kit or a fully assembled unit from the official Ploopy store is recommended.
