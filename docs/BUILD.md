@@ -31,18 +31,20 @@ Ball bearings rust quickly unless they are stainless steel. I recommend NSK ones
 - [Bearing press jig](https://github.com/ploopyco/classic-2-trackball/tree/master/hardware/mechanicals)
 - [GOTOKU arm](../3d-model/) (choose one)
   - One-piece version, printed in PLA
-    - `gotoku-v4-slim-55mm-smr63-65deg-trackball-support`
+    - `gotoku55-arm`
   - Split version, metal arm and PLA floor
-    - `gotoku-v4-slim-55mm-smr63-65deg-trackball-support-split-metal` (metal)
-    - `gotoku-v4-slim-55mm-smr63-65deg-trackball-support-split-floor-disc` (PLA)
+    - `gotoku55-arm-split-metal` (metal)
+    - `gotoku55-arm-split-floor` (PLA)
 - Case top and bottom (choose one set)
   - [small-btu v4 case top and bottom](https://github.com/adept-anyball/ploopy-adept-small-btu/tree/main/v4)
   - [GOTOKU case top and bottom](../3d-model/)
-    - `gotoku-v4-slim-top-side-screw`, `gotoku-v4-slim-bottom-side-screw`
+    - `gotoku55-case-top`, `gotoku55-case-bottom`
 
 The parts must be printed in the right orientation. As a rule, the large flat face goes on the build plate.
 
 The arm parts also come as STEP files for metal printing. The GOTOKU case bottom also comes as a STEP file. The GOTOKU case top is STL only.
+
+`gotoku55-assembled` shows the GOTOKU case, the one-piece arm and a 55 mm ball, put together. It is for checking how they fit. It is not for printing.
 
 ### Metal parts
 I recommend the split version of the arm, printed in metal with SLM. A PLA arm bends outward under the weight of the 55 mm ball and your palm. A metal arm does not bend. I had mine printed in stainless steel 316L.
