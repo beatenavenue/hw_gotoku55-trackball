@@ -31,18 +31,20 @@
 - [ベアリングはめこみ治具](https://github.com/ploopyco/classic-2-trackball/tree/master/hardware/mechanicals)
 - [GOTOKU 腕](../3d-model/)（どちらか1つ）
   - 一体版：PLAでプリント
-    - `gotoku-v4-slim-55mm-smr63-65deg-trackball-support`
+    - `gotoku55-arm`
   - 分割版：金属の腕とPLAの床
-    - `gotoku-v4-slim-55mm-smr63-65deg-trackball-support-split-metal`（金属）
-    - `gotoku-v4-slim-55mm-smr63-65deg-trackball-support-split-floor-disc`（PLA）
+    - `gotoku55-arm-split-metal`（金属）
+    - `gotoku55-arm-split-floor`（PLA）
 - 筐体トップとボトム（どちらか1組）
   - [small-btu v4 筐体トップとボトム](https://github.com/adept-anyball/ploopy-adept-small-btu/tree/main/v4)
   - [GOTOKU 筐体トップとボトム](../3d-model/)
-    - `gotoku-v4-slim-top-side-screw`、`gotoku-v4-slim-bottom-side-screw`
+    - `gotoku55-case-top`、`gotoku55-case-bottom`
 
 3Dプリントは適切な向きで行う必要があります。基本的に大きな平面がプレート側です。
 
 腕には金属プリントに使えるSTEPデータもあります。GOTOKU筐体はボトムにもSTEPデータがあり、トップはSTLのみです。
+
+`gotoku55-assembled` はGOTOKU筐体、一体版の腕、55mm球を組み立てた状態のモデルです。組み合わせの確認用で、プリント用ではありません。
 
 ### 金属部品
 腕は分割版をSLM（金属3Dプリント）で金属にすることを推奨します。PLAの腕は55mm球の重さと手のひらの力で外側にたわみますが、金属ならたわみません。私はステンレス316Lでプリントしました。
