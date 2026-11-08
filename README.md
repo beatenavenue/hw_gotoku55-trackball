@@ -32,7 +32,7 @@ Going by the height of the buttons alone, it is probably lower than the Keychron
 Putting a 55 mm ball on small-btu v4 is quite a stretch. The ball itself is large, and arms built for BTUs become huge as well, so it would be almost unusable.  
 So, to keep things compact, I made an arm part (the "trackball support" in small-btu terms) that holds a 55 mm ball on the same ball bearings Ploopy uses. That is GOTOKU-55. The name comes from *gotoku* (五徳), the pronged trivet that holds a pot over a Japanese gas burner, which is what the arm part looks like. The 55 is the ball diameter in millimetres.
 
-![handling](docs/handling.jpg)
+![gotoku is support arm](docs/gotoku_is_support_arm.jpg)
 
 In most cases the arm part is all you need. The small-btu v4 case is polished and beautiful, so you can use it as is.
 
@@ -48,6 +48,8 @@ Use the split version for metal printing. The PLA floor goes in from below. It i
 
 ### The case
 However, with a grip like mine, the stock v4 gets in the way. When I lay my thumb flat to press the front buttons, the corner of the case hits my finger.
+
+![handling](docs/handling.jpg)
 
 So, for people who hold it this way, I also made a modified case that extends the front buttons all the way to the edge.
 The screw holes and so on are unchanged from v4, so printing only the top is enough. But the front wall disappears and it looks a little bare, so I made a bottom as well.
