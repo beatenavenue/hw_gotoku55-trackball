@@ -9,6 +9,16 @@ The goal is to order the board with assembly (PCBA) from JLCPCB, so that no hand
 
 This board is not built and not tested yet.
 
+## Problem in older data (fixed on 2026-11-18)
+
+In the data before 2026-11-18, the opening for the optical sensor was only 8.6 x 8.6 mm. The lens does not fit into it.
+The cause was a mistake in the conversion. Only the square hole of the sensor footprint was made into a cutout, and the outline on the "Board Outline" layer was missed.
+
+If you have boards made from the older data, enlarge the opening to 8.6 x 17.7 mm by hand.
+Keep the width, and extend the opening by 4.55 mm at both ends (toward the USB connector and away from it).
+The extra area has no copper on any layer. On the board it is the darker green area above and below the opening.
+One board was enlarged in this way, and the optical sensor and the buttons worked.
+
 ## This board alone is not a complete trackball
 
 JLCPCB assembles all parts in the BOM except the optical sensor. You need to get these parts yourself and solder the sensor by hand.
@@ -51,8 +61,8 @@ Only the PCB was converted. The schematic was not converted. See the original sc
 The board was converted with the Altium importer of KiCad 7.
 These fixes were needed after the conversion.
 
-- The square opening for the optical sensor is now a cutout in the board outline.
-- The two locating holes of the USB-C connector are now non-plated holes.
+- The opening for the optical sensor is a cutout of 8.6 x 17.7 mm. In the Altium data, this shape is the outline of the sensor footprint on the "Board Outline" layer. The lens goes through this opening.
+- The two locating holes of the USB-C connector are now non-plated holes. In the Altium data they are marked as plated, but they have no copper and no net.
 - 10 very short broken arcs in the copper were replaced with straight segments.
 - The board thickness is set to 0.8 mm. This value comes from the Altium layer stack.
 
@@ -121,6 +131,29 @@ The HRO connector has a different pad layout. These changes were made only in th
 The connections and the clearances near the connector were checked with a script.
 **A full DRC has not been run yet. Run the DRC in KiCad 8 or later before you order this variant.**
 `Madromys-usb-area-orig-vs-hro.png` shows the area around the connector in both variants.
+
+## How the fabrication data is checked
+
+The scripts in [tools](tools/) check the Gerber and drill files against the original Altium file.
+They read the Altium file directly and do not use KiCad, so mistakes in the conversion can be found.
+
+- `verify_fab.py` compares the board outline, the cutouts and all drill holes.
+  The "Board Outline" layer of the Altium file, including the outlines inside footprints, is used as the board outline.
+- `edge_clearance.py` reports the distance from copper on all layers to the sensor cutout.
+- `export.sh` exports the Gerber and drill files with the settings used for the zip files.
+
+Expected differences reported by `verify_fab.py`:
+
+- The 8.6 mm square hole of the sensor footprint (U2) is not drilled. It is inside the sensor cutout.
+- The two locating holes of the USB-C connector (J3) are non-plated. See "Conversion from Altium to KiCad".
+- The two holes for the extra button (GP12 and GND) are added.
+- HRO variant only. The holes of the USB-C connector and two vias next to it are different.
+
+Usage:
+
+```
+python3 tools/verify_fab.py <adept-trackball>/hardware/electronics/PCBs/Madromys/Madromys.PcbDoc <folder with the unzipped Gerber files>
+```
 
 ## Starting the bootloader
 
