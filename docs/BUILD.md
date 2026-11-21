@@ -62,7 +62,7 @@ I recommend the split version of the arm, printed in metal with SLM. A PLA arm b
 
 Apart from the bending, a metal arm is not required. The bending is not pleasant, but it does not make the trackball unusable.
 
-If you use BTUs, keep in mind that, depending on the print accuracy, a BTU such as the KU-B8 may not fit. The BTU pockets have the same dimensions as the official v4: a 12.7 mm bore for the 12.6 mm body of the KU-B8, and a 17.2 mm counterbore for its 17 mm flange. That leaves only 0.1 to 0.2 mm of clearance in diameter, and unlike plastic, metal will not stretch a little when you press the BTU in.  
+If you use BTUs, keep in mind that, depending on the print accuracy, a BTU such as the KU-B8 may not fit. The BTU pockets have the same dimensions as the official v4. The bore is 12.7 mm for the 12.6 mm body of the KU-B8, and the 17 mm flange rests on the flat top of the pocket. That leaves only 0.1 mm of clearance in diameter, and unlike plastic, metal will not stretch a little when you press the BTU in.  
 If you use an adapter with a BTU smaller than the KU-B8, the plastic adapter sits in between, which eases this problem.
 
 ## Assembly

@@ -25,7 +25,7 @@ There is of course a 55 mm version, but its case is rather large, and many peopl
 #### Note: how trackballs support the ball
 Most trackballs on the market today hold the ball on static supports, such as ceramic balls. Static supports are quiet, cheap and small, so they will likely stay the mainstream. On the other hand, they always have some friction, and many users have tried things like coating the ball to make it feel better.
 
-Ball bearing supports had fallen out of use, but recently their comfort has been rediscovered, and they seem to be making a comeback: Elecom, for example, now has models with ball bearing supports in its IST and HUGE lines. Friction is low, so when you want to nudge the cursor just a little, precisely, they feel far better than static supports. This is not a special move. It happens all the time at a desk, so it makes a big difference.
+Ball bearing supports had fallen out of use, but recently their comfort has been rediscovered, and they seem to be making a comeback. Elecom, for example, now has models with ball bearing supports in its IST and HUGE lines. Friction is low, so when you want to nudge the cursor just a little, precisely, they feel far better than static supports. This is not a special move. It happens all the time at a desk, so it makes a big difference.
 
 Ploopy mainly uses ball bearing supports, but supporting the ball on special parts called BTUs (ball transfer units) has recently become popular. The Anyball project seems to be leading this BTU trend. A BTU is a large ball resting on a bed of tiny balls that let it roll smoothly. In industry, BTUs are used in conveyor tables for moving heavy loads, or as casters.  
 A ball bearing turns only about its own axle, while a BTU lets the ball roll freely in any direction. That is why BTUs are sometimes called the ideal way to support a trackball ball.
@@ -39,7 +39,7 @@ Going by the height of the buttons alone, it is probably lower than the Keychron
 ### GOTOKU-55
 Putting a 55 mm ball on ploopy-adept-small-btu v4 is quite a stretch. On paper, the ball and the arm that holds it are so big that they almost cover the buttons. But this unpromising idea turned out to work surprisingly well once I built it.  
 The lopsided look may surprise you, but it is not as huge as it looks. A 55 mm ball is certainly big for a trackball, but it is much smaller than a baseball.  
-Also, something I had felt since I first saw the small-btu case: unlike a typical trackball, the ball is exposed down to its "southern hemisphere". You can wrap your thumb around it as if gripping it, which makes even precise movements steady and comfortable.
+Also, there is something I had felt since I first saw the small-btu case. Unlike a typical trackball, the ball is exposed down to its "southern hemisphere". You can wrap your thumb around it as if gripping it, which makes even precise movements steady and comfortable.
 
 So I made an arm part (the "trackball support" in small-btu terms) that holds a 55 mm ball and fits this beautiful compact case. That is GOTOKU-55. The name comes from *gotoku* (五徳), the pronged trivet that holds a pot over a Japanese gas burner, which is what the arm part looks like. The 55 is the ball diameter in millimetres.
 
@@ -64,7 +64,7 @@ BTUs are popular in the DIY trackball world, but they are expensive. A ball bear
 BTU mods are trendy, and hard to resist. Try it only if you are in it for the romance.
 
 ### The case
-However, with a grip like mine, the stock v4 gets in the way. When I lay my thumb flat to press the front buttons, the corner of the case hits my finger.
+With a grip like mine, the stock v4 gets in the way. When I lay my thumb flat to press the front buttons, the corner of the case hits my finger.
 
 ![handling](docs/handling.jpg)
 

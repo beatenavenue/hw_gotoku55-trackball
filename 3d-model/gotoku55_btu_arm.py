@@ -11,12 +11,14 @@ Parts of the arm
 All dimensions in mm. Coordinates are the same as the GOTOKU repository.
 """
 import math
+from pathlib import Path
 import numpy as np
 import shapely.geometry as sg
 import cadquery as cq
 from cadquery import Vector
 
-GOTOKU = "../hw_gotoku55-trackball/3d-model/"
+HERE = Path(__file__).resolve().parent     # this folder (3d-model)
+GOTOKU = str(HERE) + "/"
 
 # ---- ball (fixed by the case and the sensor) ----
 BALL_D = 55.0
@@ -44,7 +46,7 @@ BACK_FILLET = 1.5                # round edge at the back of the cup (max with a
 # ---- support ----
 BASE_TOP_Z = 33.5
 # footprint in local coordinates (u: from the ball axis outward, v: sideways)
-FP_TIP_U = 14.0                  # inner end
+FP_TIP_U = 14.5                  # inner end (the top of the base is flat from 14.0 outward)
 FP_TIP_SIDE = (14.66, 4.0)       # where the inner arc meets the straight sides
 FP_WIDE = (24.08, 8.2)           # widest point
 FP_OUTER_SIDE = (34.58, 3.44)    # where the straight sides meet the outer arc
@@ -225,6 +227,16 @@ def make_arm():
 if __name__ == "__main__":
     arm, parts = make_arm()
     print("valid", arm.isValid(), "solids", len(arm.Solids()), "volume %.1f" % arm.Volume())
-    cq.exporters.export(arm, "gotoku55-btu-arm.step")
-    cq.exporters.export(arm, "gotoku55-btu-arm.stl", tolerance=0.01, angularTolerance=0.1)
+    cq.exporters.export(arm, GOTOKU + "gotoku55-btu-arm.step")
+    cq.exporters.export(arm, GOTOKU + "gotoku55-btu-arm.stl", tolerance=0.01, angularTolerance=0.1)
+    # the mesher leaves a few zero-size triangles where three faces meet; clean them up
+    import trimesh
+    m = trimesh.load(GOTOKU + "gotoku55-btu-arm.stl", process=False)
+    m.merge_vertices(digits_vertex=4)
+    m.update_faces(m.nondegenerate_faces())
+    m.update_faces(m.unique_faces())
+    m.remove_unreferenced_vertices()
+    m.fix_normals()
+    m.export(GOTOKU + "gotoku55-btu-arm.stl")
+    print("stl watertight", m.is_watertight, "shells", len(m.split(only_watertight=False)))
     print("cup length %.1f" % CUP_LEN)
