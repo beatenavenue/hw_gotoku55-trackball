@@ -46,7 +46,7 @@ BACK_FILLET = 1.5                # round edge at the back of the cup (max with a
 # ---- support ----
 BASE_TOP_Z = 33.5
 # footprint in local coordinates (u: from the ball axis outward, v: sideways)
-FP_TIP_U = 14.5                  # inner end (the top of the base is flat from 14.0 outward)
+FP_TIP_U = 14.5                  # inner end. The top of the base is flat from 14.05 outward (tiny dips at 13.95 to 14.04)
 FP_TIP_SIDE = (14.66, 4.0)       # where the inner arc meets the straight sides
 FP_WIDE = (24.08, 8.2)           # widest point
 FP_OUTER_SIDE = (34.58, 3.44)    # where the straight sides meet the outer arc
